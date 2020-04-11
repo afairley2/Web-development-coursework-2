@@ -1,0 +1,34 @@
+{
+  "name": "courseworks_cheduling_app",
+  "version": "1.0.0",
+  "description": "This application has been created to help a student schedule coursework information, Coded using node js.",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5",
+    "mustache-express": "^1.3.0",
+    "nedb": "^1.8.0",
+    "passport-local": "^1.0.0",
+    "webservice": "^0.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afairley2/Web-development-Coursework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afairley2/Web-development-Coursework"
+  },
+  "homepage": "https://github.com/afairley2/Web-development-Coursework#readme"
+}

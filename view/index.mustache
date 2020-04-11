@@ -1,0 +1,30 @@
+<head>
+  
+</head>
+
+<body>
+    <form action="/newEntry">
+        <input type="submit" value="Add new entry">
+    </form>
+        <form action="/login">
+        <input type="submit" value="Log Out">
+    </form>
+
+    {{#entries}}
+        <div>
+          
+            <div>
+                <h3> Coursework Name: {{Coursework}} </h3>
+                <h3> Milestones: {{Milestones}} </h3>
+                <h3> Description: {{Description}} </h3>
+               <h3> id: {{_id}} </h3>
+            <div>
+        </div>
+    {{/entries}}
+
+        </form>
+        <form action="/deleteCoursework">
+        <input type="submit" value="Delete Coursework">
+    </form>
+
+</body>
