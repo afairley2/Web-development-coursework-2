@@ -1,2 +1,2 @@
-# SMYOGitNodeJs
-SMYO (Show me your outfit) is an application which helps you dress better. Coded using node js.
+# Coursework Scheduler
+Coursework shceduler for coursework 2 web development. Coded using node js.
