@@ -87,6 +87,18 @@ app.post('/newEntry', function(req,res){
     res.redirect('/viewCoursework');
 });
 
+app.post('/editEntry', function(req,res){
+    if (!req.body.Coursework|| !req.body.Milestones|| !req.body.Description ){
+        res.status(400).send("Entries must have a Coursework Name , Milestones and a Description!");
+        return;
+    }
+//adds the new coursework to the database
+    dao.deleteAllEntries();
+    dao.add(req.body.Coursework, req.body.Milestones, req.body.Description);
+    console.log("A new entry has been added to the Coursework table");
+    res.redirect('/viewCoursework');
+});
+
 //Home page handler
 app.get('/', function(req, res){
     userdb.all()
@@ -103,6 +115,21 @@ app.get('/', function(req, res){
    });
    });
 
+//editCoursework page
+app.get('/editEntry', function(req, res){
+    dao.all()
+    .then((list)=>{
+        res.render("editEntry",{'entries': list});
+        console.log(list)
+    })
+    .catch((err)=>{
+        res.status(200);
+        res.type('text/plain');
+        res.send('An error has occured while loading the entries from database');
+        console.log('Error: '), 
+        console.log(JSON.stringify(err))
+    });
+})
 
 //Login page extention
 app.get('/login', function(req, res){
