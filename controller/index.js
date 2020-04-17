@@ -65,6 +65,27 @@ app.get('/newEntry', function(req,res){
     res.render("newEntry");
 });
 
+
+app.get('/sharedLink', function(req, res){
+    userdb.all()
+   
+    .then((list)=>{
+        res.render("sharedLink",{'Hi': list});
+        console.log(list)
+    })
+});
+
+    app.get('/showMe', function(req, res){
+    dao.all()
+    .then((list)=>{
+        res.render("showMe",{'entries': list});
+        console.log(list)
+    })
+
+ });
+
+    
+
 app.get('/deleteCoursework', function(req,res){
     userdb.all()
     .then((list)=>{
