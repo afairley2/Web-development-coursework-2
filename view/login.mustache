@@ -2,7 +2,7 @@
  
 </head>
 
-<body>
+<body id="body">
   <h1>Login</h1>
 
   <form method="post">
@@ -10,9 +10,13 @@
       <input type="email" id="emailTxt" name="email" required>
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
-    <button type="submit">Login</button>
+    <button type="submit" style="background-color: white;border-radius: 15px;">  Login  </button>
   </form>
 
   <a href="/register">Register</a>
 
 </body>
+
+<script>
+document.getElementById("body").style.backgroundColor = "lightblue"; 
+</script>

@@ -1,0 +1,10 @@
+in the test section, how you ensure you write a working application on your own
+since you don't have any peer review
+
+
+good complete test cases
+
+just, when you explain the architecture in the team report, explain a little about why you made it like the way you made it
+like the link schema
+
+10th 

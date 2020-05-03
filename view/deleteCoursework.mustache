@@ -1,7 +1,18 @@
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="body">
 {{#Hi}}
-<h1>Okay : {{name}} all courseworks have been deleted.</h1>
+<h1 id="h1" >Okay : {{name}} all courseworks have been deleted.</h1>
 {{/Hi}}
 
 <form action="/viewCoursework" method="GET">
-  <button type="submit">Okay</button>
+  <button type="submit" id="buttonOkay" style="background-color: white;border-radius: 75px;">Okay</button>
 </form>
+</body>
+<script>
+document.getElementById("body").style.backgroundColor = "lightblue"; 
+</script>

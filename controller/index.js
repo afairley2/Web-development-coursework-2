@@ -162,8 +162,9 @@ app.post('/login', function(req, res){
     userdb.find(req.body.emailField)
     .then((user) => {
         console.log(user);
-        bcrypt.compare(req.body.password, user.passwordField, function(){
-            if (req.body.password != user.passwordField)
+        bcrypt.compare(req.body.password, user.password, function(){
+            if (req.body.password != user.password)
+          
             res.redirect('/') 
         });
     

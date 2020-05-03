@@ -1,10 +1,15 @@
+<body id="body">
 {{#Hi}}
 <h1>Hi : {{name}}</h1>
 {{/Hi}}
 
 <form action="/logout" method="GET">
-  <button type="submit">Log Out</button>
+  <button type="submit"style="background-color: white;border-radius: 75px;">Log Out</button>
 </form>
 <form action="/viewCoursework" method="GET">
-  <button type="submit">Coursework</button>
+  <button type="submit"style="background-color: white;border-radius: 75px;">Coursework</button>
 </form>
+</body>
+<script>
+document.getElementById("body").style.backgroundColor = "lightblue"; 
+</script>
